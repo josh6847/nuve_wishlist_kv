@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>The Butler by laNuve</title>
+	<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+	<meta name="description" content="The Butler interfaces with the mobile application from la nuve" />
+	<meta name="keywords" content="The Butler La Nuve Web Mobile" />
+	<%= stylesheet_link_tag 'screen' %>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<div id="header">			
+		<a name="top"></a>
+		<h1 id="logo-text"><a href="/" title="The Butler Home">The Butler</a></h1>		
+		<p id="slogan">Delivering your desires</p>							
+	<!-- /header -->					
+	</div>
+		
+	<!-- content-wrap -->
+	<div id="content-wrap" class="clear">
+		<!-- content -->
+		<div id="content">		
+		 	<!-- main -->
+			<div id="main">	
+				<%= yield %>
+			</div>
+			<!-- /main -->		
+			<div id="sidebar">
+				<div class="sidemenu">
+			 		<h3>Allows you to...</h3>
+			 			<ul>
+			 				<li>Manage your wish list online</li>
+							<li>Search for new products</li>
+							<li>Find out what other people are buying</li>
+			 			</ul>
+				</div>
+			</div>
+		<!-- /content -->	
+		</div>				
+	<!-- /content-wrap -->	
+	</div>	
+<!-- /wrap -->
+</div>
+
+<!-- footer -->	
+<div id="footer">	
+	<!-- footer-outer -->	
+	<div id="footer-outer" class="clear"><div id="footer-wrap">
+		<div class="col-b">
+			<h3>Contact Info</h3>
+			<p>
+				<strong>Phone: </strong>+512-300-7563<br/>
+				<strong>Email: </strong>butler@lanuve.com<br/>
+				<strong><i>Austin, TX</i></strong>
+			</p>				
+		<!-- /footer-bottom -->		
+		</div>
+	<!-- /footer-outer -->		
+	</div></div>		
+<!-- /footer -->
+</div>
+
+</body>
+</html>

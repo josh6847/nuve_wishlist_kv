@@ -1,0 +1,7 @@
+log/*
+._*
+*.swp
+mkmf.log
+cap.log
+err
+.DS_Store

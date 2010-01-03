@@ -1,0 +1,11 @@
+Dear <%= @recipient['login'] %>,
+<br /><br />
+Thank you for joining The Butler by laNuve.
+<br /><br />
+In order to login to the site, you'll need to verify your account by clicking the link below:
+<br /><br />
+<%= link_to "https://app.lanuve.com/#{@recipient.verification_url}", "https://app.lanuve.com/#{@recipient.verification_url}" %>
+<br /><br />
+Thanks,
+<br />
+Nuve
