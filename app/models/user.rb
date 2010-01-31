@@ -4,11 +4,11 @@ class User
   USER_ACCOUNT_VERIFICATION_TOKEN = "3f9c2bcc50d816dee16552ac5c39cde16908074a"
   
   # user attributes using key=>value
-  key :login, String, :required => true, :limit => 40
+  key :login, String, :required => true, :limit => 40, :unique => true
   key :first_name, String, :limit => 40
   key :last_name, String, :limit => 40
-  key :email, String, :limit => 100, :required => true
-  key :phone, String, :limit => 20, :required => true
+  key :email, String, :limit => 100, :required => true, :unique => true
+  key :phone, String, :limit => 20, :required => true, :numeric => true
   key :password_hash, String, :limit => 40
   key :salt, String, :limit => 40
   key :remember_token, String, :limit => 40
@@ -16,10 +16,9 @@ class User
   key :verified, Boolean, :default => false
   # timestamps?
   
+  
+  
   #before_create :normalize_fields, :validate
-  #validates_presence_of :email, :login#, :phone, :first_name, :last_name
-  #validates_uniqueness_of :login, :on => :create, :message => "already exists and must be unique."
-  #validates_uniqueness_of :email, :on => :create, :message => "already exists and must be unique."
   #validates_confirmation_of :password  
   
   #attr_accessible :login, :phone, :email, :password, :password_confirmation

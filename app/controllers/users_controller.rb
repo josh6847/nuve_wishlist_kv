@@ -58,6 +58,7 @@ class UsersController < ApplicationController
   def create
     cookies.delete :auth_token
     reset_session
+    debugger
     @user = User.new(params[:user])
     respond_to do |format|
       if @user.save
